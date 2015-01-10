@@ -2,12 +2,12 @@
 An index of the components that compose Framaterial.
 
 ## Summary 
-- [Cards](#Cards)
-- [Datepicker](#Datepicker)
-- [Modals](#Modals)
-- [Forms](#Forms)
-- [Navigation](#Navigation)
-- [Progress-bars](#Progress-bars)
+- [Cards](#cards)
+- [Datepicker](#datepicker)
+- [Modals](#modals)
+- [Forms](#forms)
+- [Navigation](#navigation)
+- [Progress-bars](#progress-bars)
 - [Snackbar](#snackbar)
 - [Toast](#toast)
 
