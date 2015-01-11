@@ -20,7 +20,7 @@ An index of the components that compose Framaterial.
 [ [code](https://github.com/Framaterial/components/tree/master/components/lists/index.html) ]
 
 ### Inline-lists
-[ [demo](http://framaterial.github.io/components/components/datepicker/index.html) ]
+[ [demo](http://framaterial.github.io/components/components/inline-lists/index.html) ]
 [ [code](https://github.com/Framaterial/components/tree/master/components/inline-lists/index.html) ]
 
 ### Cards 
