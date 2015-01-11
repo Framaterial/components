@@ -4,6 +4,8 @@ An index of the components that compose Framaterial.
 ## Summary 
 - [Lists](#lists)
 - [Inline lists](#inline-lists)
+- [Grid](#grid)
+- [Buttons](#buttons)
 - [Cards](#cards)
 - [Datepicker](#datepicker)
 - [Modals](#modals)
@@ -22,6 +24,14 @@ An index of the components that compose Framaterial.
 ### Inline-lists
 [ [demo](http://framaterial.github.io/components/components/inline-lists/index.html) ]
 [ [code](https://github.com/Framaterial/components/tree/master/components/inline-lists/index.html) ]
+
+### Grid
+[ [demo](http://framaterial.github.io/components/components/grid/index.html) ]
+[ [code](https://github.com/Framaterial/components/tree/master/components/grid/index.html) ]
+
+### buttons
+[ [demo](http://framaterial.github.io/components/components/buttons/index.html) ]
+[ [code](https://github.com/Framaterial/components/tree/master/components/buttons/index.html) ]
 
 ### Cards 
 [ [demo](http://framaterial.github.io/components/components/cards/index.html) ]
