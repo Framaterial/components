@@ -14,7 +14,7 @@ An index of the components that compose Framaterial.
 - [Progress-bars](#progress-bars)
 - [Snackbar](#snackbar)
 - [Toast](#toast)
-- [Tooltip](#tooltip)
+- [Tooltips](#tooltips)
 
 ## Components lists : 
 
