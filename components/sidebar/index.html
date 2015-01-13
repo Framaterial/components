@@ -69,27 +69,51 @@
       <script src="../../scripts/framaterial.min.js"></script>
 
       <script>
-      // Thanks to @dervondenbergen
-      $('select').on('change', function(){
-        var $this = $(this)
-  var value = $this.val(); // changed valu to value, this irritates me :D
-  var side = $('[class*="sidebar"]');
-  var classSide = side.attr('class');
-  
-  var positions = /-left-in||-left-out||-right-out||-right-in/;
-  var colors = /#f44336||#2196F3||#4caf50||#607d8b/;
+        $('select').on('change', function(){
+         var $this = $(this)
+         var valu = $this.val();
+         var side = $('[class*="sidebar"]');
+         var classSide = side.attr('class')
 
-  if( positions.test(value) ){
-    side.attr('class', classSide.replace(positions, value))
-  } else if( colors.test(value) ){
-    side.css('background', value)
-  }
-});
+         if(valu == 'left-out'){
+           side.attr('class','')
+           side.attr('class', classSide.replace('-left-in','-left-out'))
+         }
+         else if(valu == 'right-out'){
+          side.attr('class','')
+          side.attr('class', classSide.replace('-left-out','-right-out'))
+        }
+        else if(valu == 'right-in'){
+          side.attr('class','')
+          side.attr('class', classSide.replace('-right-out','-right-in'))         
+        }
+        else if(valu == 'left-in'){
+         side.attr('class','')
+         side.attr('class', classSide.replace('-right-in','-left-in'))  
+       }
 
-    </script>
-    <!-- endbuild -->
-  </body>
-  </html>
+       else if(valu == 'red'){
+        
+         side.css('background','#f44336')
+       }
+        else if(valu == 'blue'){
+        
+         side.css('background','#2196F3')
+       }
+       else if(valu == 'green'){
+        
+         side.css('background','#4caf50')
+       }
+        else if(valu == 'bluegrey'){
+        
+         side.css('background','#607d8b')
+       }
+
+     });
+      </script>
+      <!-- endbuild -->
+    </body>
+    </html>
 
 
 
