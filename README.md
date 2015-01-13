@@ -64,3 +64,7 @@ An index of the components that compose Framaterial.
 ### toast 
 [ [demo](http://framaterial.github.io/components/components/toast/index.html) ] 
 [ [code](https://github.com/Framaterial/components/tree/master/components/toast/index.html) ]
+
+### tooltips
+[ [demo](http://framaterial.github.io/components/components/tooltips/index.html) ] 
+[ [code](https://github.com/Framaterial/components/tree/master/components/tooltips/index.html) ]
