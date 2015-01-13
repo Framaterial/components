@@ -50,16 +50,17 @@
 
           <div class="material-container-layout">
            <select name="typeof" id="typeof">
-            <option value="left-out">left-out</option>
-            <option value="right-out">right-out</option>
-            <option value="left-in">left-in</option>
-            <option value="right-in">right-in</option>
+            <option value="-left-out">left-out</option>
+            <option value="-right-out">right-out</option>
+            <option value="-left-in">left-in</option>
+            <option value="-right-in">right-in</option>
           </select>
+
           <select name="colors" id="colors">
-            <option value="red">red</option>
-            <option value="blue">blue</option>
-            <option value="green">green</option>
-            <option value="grey">grey</option>
+            <option value="#f44336">red</option>
+            <option value="#2196F3">blue</option>
+            <option value="#4caf50">green</option>
+            <option value="#607d8b">grey</option>
           </select>
         </div>
       </div>
@@ -69,8 +70,8 @@
       <script src="../../scripts/framaterial.min.js"></script>
 
       <script>
-      $('select').on('change', function(){
-  var $this = $(this)
+        $('select').on('change', function(){
+          var $this = $(this)
   var value = $this.val(); // changed valu to value, this irritates me :D
   var side = $('[class*="sidebar"]');
   var classSide = side.attr('class');
