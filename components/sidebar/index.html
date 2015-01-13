@@ -50,10 +50,10 @@
 
           <div class="material-container-layout">
            <select name="typeof" id="typeof">
-            <option value="out-left">out-left</option>
-            <option value="out-right">out-right</option>
-            <option value="in-left">in-left</option>
-            <option value="in-right">in-right</option>
+            <option value="left-out">left-out</option>
+            <option value="right-out">right-out</option>
+            <option value="left-in">left-in</option>
+            <option value="right-in">right-in</option>
           </select>
           <select name="colors" id="colors">
             <option value="red">red</option>
@@ -67,6 +67,54 @@
       <!-- build:js scripts/main.js -->
       <script src="../../scripts/jquery.min.js"></script>
       <script src="../../scripts/framaterial.min.js"></script>
+
+      <script>
+        $('select').on('change', function(){
+         var $this = $(this)
+         var valu = $this.val();
+         var side = $('[class*="sidebar"]');
+         var classSide = side.attr('class')
+
+         if(valu == 'left-out'){
+           side.attr('class','')
+           side.attr('class', classSide.replace('-left-in','-left-out'))
+         }
+         else if(valu == 'right-out'){
+          side.attr('class','')
+          side.attr('class', classSide.replace('-left-out','-right-out'))
+        }
+        else if(valu == 'right-in'){
+          side.attr('class','')
+          side.attr('class', classSide.replace('-right-out','-right-in'))         
+        }
+        else if(valu == 'left-in'){
+         side.attr('class','')
+         side.attr('class', classSide.replace('-right-in','-left-in'))  
+       }
+
+       else if(valu == 'red'){
+        
+         side.css('background','#f44336')
+       }
+        else if(valu == 'blue'){
+        
+         side.css('background','#2196F3')
+       }
+       else if(valu == 'green'){
+        
+         side.css('background','#4caf50')
+       }
+        else if(valu == 'bluegrey'){
+        
+         side.css('background','#607d8b')
+       }
+
+     });
+      </script>
       <!-- endbuild -->
     </body>
     </html>
+
+
+
+
