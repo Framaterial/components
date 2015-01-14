@@ -72,25 +72,19 @@
       <script>
         $('select').on('change', function(){
           var $this = $(this)
-  var value = $this.val(); // changed valu to value, this irritates me :D
-  var side = $('[class*="sidebar"]');
-  var classSide = side.attr('class');
-  
-  var positions = /-left-in|-left-out|-right-out|-right-in/;
-  var colors = /#f44336|#2196F3|#4caf50|#607d8b/;
-  
-  /* one pipe too much for regex
-  var positions = /-left-in||-left-out||-right-out||-right-in/;
-  var colors = /#f44336||#2196F3||#4caf50||#607d8b/;
-  */
-  
-  if( positions.test(value) ){
-    side.attr('class', classSide.replace(positions, value))
-  } else if( colors.test(value) ){
-    side.css('background', value)
-  }
-});
-
+          var value = $this.val(); 
+          var side = $('[class*="sidebar"]');
+          var classSide = side.attr('class');
+          
+          var positions = /-left-in|-left-out|-right-out|-right-in/;
+          var colors = /#f44336|#2196F3|#4caf50|#607d8b/;
+          
+          if( positions.test(value) ){
+            side.attr('class', classSide.replace(positions, value))
+          } else if( colors.test(value) ){
+            side.css('background', value)
+          }
+        });
       </script>
       <!-- endbuild -->
     </body>
